@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/portofolio-khairunnisa-new/static/js/main.5e14b3e2.js",
-    "static/js/25.60483889.chunk.js": "/portofolio-khairunnisa-new/static/js/25.60483889.chunk.js",
+    "main.js": "/portofolio-khairunnisa-new/static/js/main.34e4e6ef.js",
+    "static/js/25.77fc58b6.chunk.js": "/portofolio-khairunnisa-new/static/js/25.77fc58b6.chunk.js",
     "static/js/976.add7a8fa.chunk.js": "/portofolio-khairunnisa-new/static/js/976.add7a8fa.chunk.js",
     "static/js/47.be168105.chunk.js": "/portofolio-khairunnisa-new/static/js/47.be168105.chunk.js",
     "static/js/407.c37267fc.chunk.js": "/portofolio-khairunnisa-new/static/js/407.c37267fc.chunk.js",
@@ -25,8 +25,8 @@
     "static/media/nabati-1.png": "/portofolio-khairunnisa-new/static/media/nabati-1.3367da15e71f207ee8d0.png",
     "static/media/bg3.jpg": "/portofolio-khairunnisa-new/static/media/bg3.b5b50b7c5feefd8e3ebb.jpg",
     "index.html": "/portofolio-khairunnisa-new/index.html",
-    "main.5e14b3e2.js.map": "/portofolio-khairunnisa-new/static/js/main.5e14b3e2.js.map",
-    "25.60483889.chunk.js.map": "/portofolio-khairunnisa-new/static/js/25.60483889.chunk.js.map",
+    "main.34e4e6ef.js.map": "/portofolio-khairunnisa-new/static/js/main.34e4e6ef.js.map",
+    "25.77fc58b6.chunk.js.map": "/portofolio-khairunnisa-new/static/js/25.77fc58b6.chunk.js.map",
     "976.add7a8fa.chunk.js.map": "/portofolio-khairunnisa-new/static/js/976.add7a8fa.chunk.js.map",
     "47.be168105.chunk.js.map": "/portofolio-khairunnisa-new/static/js/47.be168105.chunk.js.map",
     "407.c37267fc.chunk.js.map": "/portofolio-khairunnisa-new/static/js/407.c37267fc.chunk.js.map",
@@ -40,6 +40,6 @@
     "973.98e7c8d0.chunk.js.map": "/portofolio-khairunnisa-new/static/js/973.98e7c8d0.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.5e14b3e2.js"
+    "static/js/main.34e4e6ef.js"
   ]
 }
