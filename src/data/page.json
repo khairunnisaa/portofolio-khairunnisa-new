@@ -1,0 +1,22 @@
+[
+  {
+    "path": "/",
+    "name": "Profile",
+    "children":[]
+  },
+  {
+    "path": "/portfolio",
+    "name": "Portfolio",
+    "children":[]
+  },
+  {
+    "path": "/contact",
+    "name": "Contact",
+    "children":[]
+  },
+  {
+    "path": "/project",
+    "name": "Project",
+    "children":[]
+  }
+]

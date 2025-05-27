@@ -1,14 +1,15 @@
 {
   "name": "Khairunnisa",
   "title": "Software Engineer",
-  "photo": "/images/photo/nisa.jpeg",
-  "quete": "Don't practice until you get it right. Practice until you can't get it wrong.",
+  "photo": "../../assets/images/photo/nisa-2.png'",
+  "quote": "Don't practice until you get it right. Practice until you can't get it wrong.",
   "contact": {
-    "address": "Banten, 15144",
-    "phone": "+62 813-8560-1299 || +6019",
+    "address": "Cyberjaya, Selangor, Malaysia",
+    "phone": "(+62) 813 8560 1299 || (+60) 19 904 2749",
     "email": "nissa.khairunnisaaa@gmail.com",
     "linkedin": "https://www.linkedin.com/in/khairunnisa-83022861/",
-    "github": "https://www.github.com/khairunnisaa"
+    "github": "https://www.github.com/khairunnisaa",
+    "website": "https://khairunnisaa.github.io/portofolio-khairunnisa/"
   },
   "summary": "I,am a experienced Software Engineer with a strong background in backend and full- stack development. Over a decade of expertise in fintech, e-commerce, and banking industries. Skilled in Java Spring Boot, PostgreSQL, and Node.js to drive system scalability and enhance user experience. Proven ability to lead cross-functional teams in delivering innovative solutions and solving complex projects within tight deadlines. Committed to continuous learning to stay ahead in the ever- evolving tech landscape.",
   "skills": [
@@ -280,7 +281,8 @@
       "color":"primary"
     }
   ],
-  "projects":[{
+  "projects":[
+    {
     "title": "Amritex Dashboard Project",
     "logo": "/images/projects/amritex/amritex-logo.png",
     "image": "/images/projects/amritex/amritex-1.png",
@@ -299,5 +301,106 @@
       }
     ],
     "link": ""
-  }]
+    },
+    {
+      "title": "Amritex Dashboard Project",
+      "logo": "/images/projects/amritex/amritex-logo.png",
+      "image": "/images/projects/amritex/amritex-1.png",
+      "date": "February 2025 - April 2025",
+      "description": "Amritex Dashboard is a freelance project I worked on for a U.S.-based company located in Texas. The project lasted for 3 months and involved building a production monitoring dashboard for pipe manufacturing The main goal of this application was to track and visualize the daily pipe production results. I was responsible for developing a full-stack application that included:\n\nReal-time production data visualization, showing production output per hour using interactive charts.\n\nAutomated reporting feature, allowing users to generate daily production reports in PDF format.\n\nFull-stack development, where I handled both frontend and backend programming.",
+      "tools": {
+        "frontend": ["Next.js 13+", "Tailwind", "React Hook", "Typescript"],
+        "backend": ["Node.js", "Express.js", "Sequelize", "Typescript"],
+        "database": ["MongoDB"],
+        "architecture": ["Monorepo"]
+      },
+      "images": [
+        {
+          "name": "Amritex Main Dashboard",
+          "image": "/images/projects/amritex/amritex-1.png"
+        }
+      ],
+      "link": ""
+    },
+    {
+      "title": "Application Budgety",
+      "logo": "/images/projects/amritex/amritex-logo.png",
+      "image": "/images/projects/amritex/amritex-1.png",
+      "date": "February 2025 - April 2025",
+      "description": "Budgety is a simple web application that allows users to record and monitor their monthly financial flows. The app's interface is minimalist and easy to use, perfect for users who want to manage their daily finances without any hassle.",
+      "tools": {
+        "frontend": ["Next.js 13+", "Tailwind", "React Hook", "Typescript"],
+        "backend": ["Node.js", "Express.js", "Sequelize", "Typescript"],
+        "database": ["MongoDB"],
+        "architecture": ["Monorepo"]
+      },
+      "images": [
+        {
+          "name": "Budgety",
+          "image": "/images/projects/amritex/amritex-1.png"
+        }
+      ],
+      "link": "https://adityasubono.github.io/bugetplanner.github.io/"
+    },
+    {
+      "title": "Amritex Dashboard Project",
+      "logo": "/images/projects/amritex/amritex-logo.png",
+      "image": "/images/projects/amritex/amritex-1.png",
+      "date": "February 2025 - April 2025",
+      "description": "Amritex Dashboard is a freelance project I worked on for a U.S.-based company located in Texas. The project lasted for 3 months and involved building a production monitoring dashboard for pipe manufacturing The main goal of this application was to track and visualize the daily pipe production results. I was responsible for developing a full-stack application that included:\n\nReal-time production data visualization, showing production output per hour using interactive charts.\n\nAutomated reporting feature, allowing users to generate daily production reports in PDF format.\n\nFull-stack development, where I handled both frontend and backend programming.",
+      "tools": {
+        "frontend": ["Next.js 13+", "Tailwind", "React Hook", "Typescript"],
+        "backend": ["Node.js", "Express.js", "Sequelize", "Typescript"],
+        "database": ["MongoDB"],
+        "architecture": ["Monorepo"]
+      },
+      "images": [
+        {
+          "name": "Amritex Main Dashboard",
+          "image": "/images/projects/amritex/amritex-1.png"
+        }
+      ],
+      "link": ""
+    },
+    {
+      "title": "Amritex Dashboard Project",
+      "logo": "/images/projects/amritex/amritex-logo.png",
+      "image": "/images/projects/amritex/amritex-1.png",
+      "date": "February 2025 - April 2025",
+      "description": "Amritex Dashboard is a freelance project I worked on for a U.S.-based company located in Texas. The project lasted for 3 months and involved building a production monitoring dashboard for pipe manufacturing The main goal of this application was to track and visualize the daily pipe production results. I was responsible for developing a full-stack application that included:\n\nReal-time production data visualization, showing production output per hour using interactive charts.\n\nAutomated reporting feature, allowing users to generate daily production reports in PDF format.\n\nFull-stack development, where I handled both frontend and backend programming.",
+      "tools": {
+        "frontend": ["Next.js 13+", "Tailwind", "React Hook", "Typescript"],
+        "backend": ["Node.js", "Express.js", "Sequelize", "Typescript"],
+        "database": ["MongoDB"],
+        "architecture": ["Monorepo"]
+      },
+      "images": [
+        {
+          "name": "Amritex Main Dashboard",
+          "image": "/images/projects/amritex/amritex-1.png"
+        }
+      ],
+      "link": ""
+    },
+    {
+      "title": "Amritex Dashboard Project",
+      "logo": "/images/projects/amritex/amritex-logo.png",
+      "image": "/images/projects/amritex/amritex-1.png",
+      "date": "February 2025 - April 2025",
+      "description": "Amritex Dashboard is a freelance project I worked on for a U.S.-based company located in Texas. The project lasted for 3 months and involved building a production monitoring dashboard for pipe manufacturing The main goal of this application was to track and visualize the daily pipe production results. I was responsible for developing a full-stack application that included:\n\nReal-time production data visualization, showing production output per hour using interactive charts.\n\nAutomated reporting feature, allowing users to generate daily production reports in PDF format.\n\nFull-stack development, where I handled both frontend and backend programming.",
+      "tools": {
+        "frontend": ["Next.js 13+", "Tailwind", "React Hook", "Typescript"],
+        "backend": ["Node.js", "Express.js", "Sequelize", "Typescript"],
+        "database": ["MongoDB"],
+        "architecture": ["Monorepo"]
+      },
+      "images": [
+        {
+          "name": "Amritex Main Dashboard",
+          "image": "/images/projects/amritex/amritex-1.png"
+        }
+      ],
+      "link": ""
+    }
+  ]
 }

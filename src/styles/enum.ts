@@ -1,5 +1,5 @@
 export enum MuiColor {
-    Orange = '#f15d30',
+    Orange = '#12d5cf',
     White = '#fff',
     Black = '#000000',
 }
