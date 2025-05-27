@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkpoertofolio_khairunnisa_new=self.webpackChunkpoertofolio_khairunnisa_new||[]).push([[411],{4411:(e,o,n)=>{n.r(o),n.d(o,{default:()=>r});n(5043);var a=n(4842),i=n(579);const r=()=>(0,i.jsx)(a.A,{children:"Page Portfolio"})}}]);
+//# sourceMappingURL=411.d94203dc.chunk.js.map
