@@ -9,7 +9,7 @@ function App() {
     return (
       <ThemeProvider theme={theme}>
         <CssBaseline />
-          <BrowserRouter basename="/portofolio-khairunnisa-new">
+          <BrowserRouter basename={process.env.REACT_APP_BASE_URL || '/portofolio-khairunnisa-new'}>
               <AppRoutes/>
           </BrowserRouter>
       </ThemeProvider>

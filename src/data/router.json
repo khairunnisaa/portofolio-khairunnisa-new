@@ -7,14 +7,6 @@
         "element": "Profile"
       },
       {
-        "path": "/contact",
-        "element": "Contact"
-      },
-      {
-        "path": "/portfolio",
-        "element": "Portfolio"
-      },
-      {
         "path": "/project",
         "element": "Project"
       },
