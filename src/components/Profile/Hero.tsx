@@ -1,8 +1,9 @@
 import React from 'react';
 import { Avatar, Box, Card, CardContent, Stack, Typography } from "@mui/material";
-import bg from "../../assets/images/bg3.jpg";
-import photo from '../../assets/images/photo/nisa-2.png'
 import NavbarProfile from "./NavbarProfile";
+import bg from '../../assets/images/bg3.jpg'
+import photo from '../../assets/images/photo/nisa-2.png'
+
 interface HeroItem {
     name: string;
     title: string;
@@ -11,11 +12,25 @@ interface HeroItem {
     summary: string;
 }
 
-interface HeroProps {
-    data: HeroItem;
+interface RouteChild {
+    index?: boolean;
+    path: string;
+    name: string;
+    element: string;
+    icon: React.ElementType; // ✅ ubah dari string jadi ReactNode
 }
 
-const Hero: React.FC<HeroProps> = ({ data }) => {
+interface RouteData {
+    layout: string;
+    children: RouteChild[];
+}
+
+interface HeroProps {
+    data: HeroItem;
+    router: RouteData;
+}
+
+const Hero: React.FC<HeroProps> = ({ data, router }) => {
     return (
         <Card
             sx={{
@@ -24,20 +39,21 @@ const Hero: React.FC<HeroProps> = ({ data }) => {
                 backgroundPosition: 'center',
                 position: 'relative',
                 display: 'flex',
-                overflow: 'hidden',
                 flexDirection: 'column',
+                overflow: 'hidden',
                 borderRadius: { xs: 4, md: '100px 0 0 0' },
             }}
         >
             <Box
                 sx={{
-                    position: "absolute",
-                    opacity: 0.7,
-                    background: "#0a1427",
-                    width: "100%",
+                    position: 'absolute',
+                    top: 0,
+                    left: 0,
+                    width: '100%',
                     height: '100%',
+                    backgroundColor: '#0a1427',
+                    opacity: 0.7,
                     zIndex: 1,
-                    objectFit: 'cover',
                     borderRadius: { xs: 4, md: '100px 0 0 0' },
                 }}
             />
@@ -45,26 +61,16 @@ const Hero: React.FC<HeroProps> = ({ data }) => {
                 <Stack
                     direction={{ xs: 'column', md: 'row' }}
                     spacing={3}
-                    sx={{
-                        backgroundRepeat: 'no-repeat',
-                        backgroundSize: 'cover',
-                        borderRadius: { xs: 4, md: '100px 0 0 100px' },
-                        p:3,
-                        alignItems: 'center',
-                    }}
+                    sx={{ p: 3, alignItems: 'center' }}
                 >
                     <Avatar
                         src={photo}
                         alt={data.name}
-                        sx={{
-                            width: 150,
-                            height: 150,
-                            backgroundSize: 'cover',
-                        }}
+                        sx={{ width: 150, height: 150 }}
                     />
                     <Box textAlign={{ xs: 'center', md: 'left' }}>
                         <Typography variant="h3" color="white" gutterBottom>
-                            Hello! I&#39;m <strong>{data.name}</strong>,
+                            Hello! I&#39;m <strong>{data.name}</strong>
                         </Typography>
                         <Typography variant="h5" color="white" gutterBottom>
                             <strong>“{data.quote}”</strong>
@@ -72,19 +78,18 @@ const Hero: React.FC<HeroProps> = ({ data }) => {
                     </Box>
                 </Stack>
 
-                <Stack sx={{px:3}}>
-                    <Box>
-                        <Typography variant="h5" color={'white'} gutterBottom>
-                            Summary
-                        </Typography>
-                        <Typography variant="body2" color={'white'} gutterBottom>
-                            {data.summary}
-                        </Typography>
-                    </Box>
-                </Stack>
-                <Stack>
-                    <NavbarProfile/>
-                </Stack>
+                <Box sx={{ px: 3, mt: 2 }}>
+                    <Typography variant="h5" color="white" gutterBottom>
+                        Summary
+                    </Typography>
+                    <Typography variant="body2" color="white">
+                        {data.summary}
+                    </Typography>
+                </Box>
+
+                <Box sx={{ mt: 3 }}>
+                    <NavbarProfile data={router} />
+                </Box>
             </CardContent>
         </Card>
     );

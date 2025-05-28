@@ -6,12 +6,13 @@ import netflix from '../assets/images/projects/netflix/netflik-1.png'
 import mst from '../assets/images/projects/my-muslim-tours/mst-1.png'
 import ownlexa from '../assets/images/projects/ownlexa/owlexa-1.png'
 import lesonline from '../assets/images/projects/les-online/les-online-1.png'
+import photo from '../assets/images/photo/nisa-2.png'
 
 export const  data =
     {
         "name": "Khairunnisa",
         "title": "Software Engineer",
-        "photo": "../../assets/images/photo/nisa-2.png'",
+        "photo": photo,
         "quote": "Don't practice until you get it right. Practice until you can't get it wrong.",
         "contact": {
             "address": "Cyberjaya, Selangor, Malaysia",
@@ -298,12 +299,19 @@ export const  data =
                 "image": ameritexImage,
                 "date": "February 2025 - April 2025",
                 "description": "Amritex Dashboard is a freelance project I worked on for a U.S.-based company located in Texas. The project lasted for 3 months and involved building a production monitoring dashboard for pipe manufacturing The main goal of this application was to track and visualize the daily pipe production results. I was responsible for developing a full-stack application that included:\n\nReal-time production data visualization, showing production output per hour using interactive charts.\n\nAutomated reporting feature, allowing users to generate daily production reports in PDF format.\n\nFull-stack development, where I handled both frontend and backend programming.",
-                "tools": {
-                    "frontend": ["Next.js 13+", "Tailwind", "React Hook", "Typescript"],
-                    "backend": ["Node.js", "Express.js", "Sequelize", "Typescript"],
-                    "database": ["MongoDB"],
-                    "architecture": ["Monorepo"]
-                },
+                "tools": [
+                    {
+                        "type": "Frontend",
+                        "technology": ["Next.js 13+", "Tailwind", "React Hook", "Typescript"]
+                    },
+                    {
+                        "type": "Backend",
+                        "technology": ["Next.js 13+", "Tailwind", "React Hook", "Typescript"]
+                    },
+                    {
+                        "type": "Database",
+                        "technology": ["Next.js 13+", "Tailwind", "React Hook", "Typescript"]
+                    }],
                 "images": [
                     {
                         "name": "Amritex Main Dashboard",
@@ -318,12 +326,19 @@ export const  data =
                 "image": lesonline,
                 "date": "January 2020 - Maret 2020",
                 "description": "Amritex Dashboard is a freelance project I worked on for a U.S.-based company located in Texas. The project lasted for 3 months and involved building a production monitoring dashboard for pipe manufacturing The main goal of this application was to track and visualize the daily pipe production results. I was responsible for developing a full-stack application that included:\n\nReal-time production data visualization, showing production output per hour using interactive charts.\n\nAutomated reporting feature, allowing users to generate daily production reports in PDF format.\n\nFull-stack development, where I handled both frontend and backend programming.",
-                "tools": {
-                    "frontend": ["Next.js 13+", "Tailwind", "React Hook", "Typescript"],
-                    "backend": ["Node.js", "Express.js", "Sequelize", "Typescript"],
-                    "database": ["MongoDB"],
-                    "architecture": ["Monorepo"]
-                },
+                "tools": [
+                    {
+                        "type": "Frontend",
+                        "technology": ["Next.js 13+", "Tailwind", "React Hook", "Typescript"]
+                    },
+                    {
+                        "type": "Backend",
+                        "technology": ["Next.js 13+", "Tailwind", "React Hook", "Typescript"]
+                    },
+                    {
+                        "type": "Database",
+                        "technology": ["Next.js 13+", "Tailwind", "React Hook", "Typescript"]
+                    }],
                 "images": [
                     {
                         "name": "Amritex Main Dashboard",
@@ -338,12 +353,19 @@ export const  data =
                 "image": budgetyImage,
                 "date": "December 2019",
                 "description": "Budgety is a simple web application that allows users to record and monitor their monthly financial flows. The app's interface is minimalist and easy to use, perfect for users who want to manage their daily finances without any hassle.",
-                "tools": {
-                    "frontend": ["Next.js 13+", "Tailwind", "React Hook", "Typescript"],
-                    "backend": ["Node.js", "Express.js", "Sequelize", "Typescript"],
-                    "database": ["MongoDB"],
-                    "architecture": ["Monorepo"]
-                },
+                "tools": [
+                    {
+                        "type": "Frontend",
+                        "technology": ["Next.js 13+", "Tailwind", "React Hook", "Typescript"]
+                    },
+                    {
+                        "type": "Backend",
+                        "technology": ["Next.js 13+", "Tailwind", "React Hook", "Typescript"]
+                    },
+                    {
+                        "type": "Database",
+                        "technology": ["Next.js 13+", "Tailwind", "React Hook", "Typescript"]
+                    }],
                 "images": [
                     {
                         "name": "Budgety",
@@ -358,12 +380,19 @@ export const  data =
                 "image": netflix,
                 "date": "November 2025",
                 "description": "Amritex Dashboard is a freelance project I worked on for a U.S.-based company located in Texas. The project lasted for 3 months and involved building a production monitoring dashboard for pipe manufacturing The main goal of this application was to track and visualize the daily pipe production results. I was responsible for developing a full-stack application that included:\n\nReal-time production data visualization, showing production output per hour using interactive charts.\n\nAutomated reporting feature, allowing users to generate daily production reports in PDF format.\n\nFull-stack development, where I handled both frontend and backend programming.",
-                "tools": {
-                    "frontend": ["Next.js 13+", "Tailwind", "React Hook", "Typescript"],
-                    "backend": ["Node.js", "Express.js", "Sequelize", "Typescript"],
-                    "database": ["MongoDB"],
-                    "architecture": ["Monorepo"]
-                },
+                "tools": [
+                    {
+                        "type": "Frontend",
+                        "technology": ["Next.js 13+", "Tailwind", "React Hook", "Typescript"]
+                    },
+                    {
+                        "type": "Backend",
+                        "technology": ["Next.js 13+", "Tailwind", "React Hook", "Typescript"]
+                    },
+                    {
+                        "type": "Database",
+                        "technology": ["Next.js 13+", "Tailwind", "React Hook", "Typescript"]
+                    }],
                 "images": [
                     {
                         "name": "Amritex Main Dashboard",
@@ -379,12 +408,19 @@ export const  data =
                 "image": mst,
                 "date": "Mei 2025",
                 "description": "Amritex Dashboard is a freelance project I worked on for a U.S.-based company located in Texas. The project lasted for 3 months and involved building a production monitoring dashboard for pipe manufacturing The main goal of this application was to track and visualize the daily pipe production results. I was responsible for developing a full-stack application that included:\n\nReal-time production data visualization, showing production output per hour using interactive charts.\n\nAutomated reporting feature, allowing users to generate daily production reports in PDF format.\n\nFull-stack development, where I handled both frontend and backend programming.",
-                "tools": {
-                    "frontend": ["Next.js 13+", "Tailwind", "React Hook", "Typescript"],
-                    "backend": ["Node.js", "Express.js", "Sequelize", "Typescript"],
-                    "database": ["MongoDB"],
-                    "architecture": ["Monorepo"]
-                },
+                "tools": [
+                    {
+                        "type": "Frontend",
+                        "technology": ["Next.js 13+", "Tailwind", "React Hook", "Typescript"]
+                    },
+                    {
+                        "type": "Backend",
+                        "technology": ["Next.js 13+", "Tailwind", "React Hook", "Typescript"]
+                    },
+                    {
+                        "type": "Database",
+                        "technology": ["Next.js 13+", "Tailwind", "React Hook", "Typescript"]
+                    }],
                 "images": [
                     {
                         "name": "Amritex Main Dashboard",
@@ -399,12 +435,19 @@ export const  data =
                 "image": nabati,
                 "date": "February 2025 - April 2025",
                 "description": "Amritex Dashboard is a freelance project I worked on for a U.S.-based company located in Texas. The project lasted for 3 months and involved building a production monitoring dashboard for pipe manufacturing The main goal of this application was to track and visualize the daily pipe production results. I was responsible for developing a full-stack application that included:\n\nReal-time production data visualization, showing production output per hour using interactive charts.\n\nAutomated reporting feature, allowing users to generate daily production reports in PDF format.\n\nFull-stack development, where I handled both frontend and backend programming.",
-                "tools": {
-                    "frontend": ["Next.js 13+", "Tailwind", "React Hook", "Typescript"],
-                    "backend": ["Node.js", "Express.js", "Sequelize", "Typescript"],
-                    "database": ["MongoDB"],
-                    "architecture": ["Monorepo"]
-                },
+                "tools": [
+                    {
+                        "type": "Frontend",
+                        "technology": ["Next.js 13+", "Tailwind", "React Hook", "Typescript"]
+                    },
+                    {
+                        "type": "Backend",
+                        "technology": ["Next.js 13+", "Tailwind", "React Hook", "Typescript"]
+                    },
+                    {
+                        "type": "Database",
+                        "technology": ["Next.js 13+", "Tailwind", "React Hook", "Typescript"]
+                    }],
                 "images": [
                     {
                         "name": "Amritex Main Dashboard",
@@ -419,12 +462,19 @@ export const  data =
                 "image": ownlexa,
                 "date": "October 2021 - December 2021",
                 "description": "Amritex Dashboard is a freelance project I worked on for a U.S.-based company located in Texas. The project lasted for 3 months and involved building a production monitoring dashboard for pipe manufacturing The main goal of this application was to track and visualize the daily pipe production results. I was responsible for developing a full-stack application that included:\n\nReal-time production data visualization, showing production output per hour using interactive charts.\n\nAutomated reporting feature, allowing users to generate daily production reports in PDF format.\n\nFull-stack development, where I handled both frontend and backend programming.",
-                "tools": {
-                    "frontend": ["Next.js 13+", "Tailwind", "React Hook", "Typescript"],
-                    "backend": ["Node.js", "Express.js", "Sequelize", "Typescript"],
-                    "database": ["MongoDB"],
-                    "architecture": ["Monorepo"]
-                },
+                "tools": [
+                    {
+                        "type": "Frontend",
+                        "technology": ["Next.js 13+", "Tailwind", "React Hook", "Typescript"]
+                    },
+                    {
+                        "type": "Backend",
+                        "technology": ["Next.js 13+", "Tailwind", "React Hook", "Typescript"]
+                    },
+                    {
+                        "type": "Database",
+                        "technology": ["Next.js 13+", "Tailwind", "React Hook", "Typescript"]
+                    }],
                 "images": [
                     {
                         "name": "Amritex Main Dashboard",
@@ -435,16 +485,23 @@ export const  data =
             },
             {
                 "title": "Application carisepeda.com",
-                "logo": "carisedepa",
+                "logo": "carisepeda.png",
                 "image": carisepeda,
                 "date": "Augusts 2019",
                 "description": "Carisepeda.com is an e-commerce website that focuses on selling various types of bicycles. This page was designed to make it easier for users to find and buy a bicycle that suits their needs.",
-                "tools": {
-                    "frontend": ["Next.js 13+", "Tailwind", "React Hook", "Typescript"],
-                    "backend": ["Node.js", "Express.js", "Sequelize", "Typescript"],
-                    "database": ["MongoDB"],
-                    "architecture": ["Monorepo"]
-                },
+                "tools": [
+                    {
+                        "type": "Frontend",
+                        "technology": ["Next.js 13+", "Tailwind", "React Hook", "Typescript"]
+                    },
+                    {
+                        "type": "Backend",
+                        "technology": ["Next.js 13+", "Tailwind", "React Hook", "Typescript"]
+                    },
+                    {
+                        "type": "Database",
+                        "technology": ["Next.js 13+", "Tailwind", "React Hook", "Typescript"]
+                    }],
                 "images": [
                     {
                         "name": "Amritex Main Dashboard",

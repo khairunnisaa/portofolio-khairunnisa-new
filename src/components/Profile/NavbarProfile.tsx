@@ -1,53 +1,98 @@
 import React from 'react';
-import { Box, Stack, Link } from "@mui/material";
-import AccountBoxIcon from '@mui/icons-material/AccountBox';
-import AccountTreeIcon from '@mui/icons-material/AccountTree';
+import { Box, Stack, Link } from '@mui/material';
 import { Link as RouterLink } from 'react-router-dom';
+import { ReactNode } from 'react';
 
-const BASE_URL = process.env.REACT_APP_BASENAME || '';
+interface RouteChild {
+    index?: boolean;
+    path: string;
+    name: string;
+    element: ReactNode | string;
+    icon: React.ElementType;
+}
 
-const NavbarProfile: React.FC = () => {
+interface RouteData {
+    layout: string;
+    children: RouteChild[];
+}
+
+interface NavbarProfileProps {
+    data: RouteData;
+}
+
+const NavbarProfile: React.FC<NavbarProfileProps> = ({ data }) => {
+    // @ts-ignore
     return (
         <Stack mb={-3} mr={-2} direction="row" justifyContent="flex-end">
-            <Stack direction="row" spacing={3} sx={{
-                backgroundColor: 'white',
-                padding: 2,
-                borderTopLeftRadius: 8,
-                cursor: 'pointer',
-            }}>
-                {/* Profile */}
-                <Stack direction="column" sx={{ m: 1, backgroundColor: 'white', color: 'black', borderRadius: 2 }}>
-                    <Stack ml={1} direction="row" alignItems="stretch">
-                        <Box sx={{ backgroundColor: 'orange', mt: -3, width: 40, borderRadius: 1 }}>
-                            <AccountBoxIcon fontSize="large" />
-                        </Box>
-                    </Stack>
-                    <Link
-                        component={RouterLink}
-                        to={'/'}
-                        underline="hover"
-                        sx={{ m: 1, color: 'text.primary' }}
-                    >
-                        Profile
-                    </Link>
-                </Stack>
+            <Stack
+                direction="row"
+                spacing={3}
+                sx={{
+                    backgroundColor: 'white',
+                    padding: 2,
+                    borderTopLeftRadius: 8,
+                    cursor: 'pointer',
+                    '&:hover': {
+                        color: 'white',
+                        backgroundColor: 'white',
+                    },
+                }}
+            >
+                {data.children.map((route, i) => (
+                    <Stack
+                        key={i}
+                        direction="column"
+                        sx={{
+                            m: 1,
+                            backgroundColor: 'white',
+                            color: 'black',
+                            borderRadius: 2,
+                            minWidth: 100,
+                            '&:hover': {
+                                color: 'white',
+                                backgroundColor: 'orange',
+                            },
 
-                {/* Project */}
-                <Stack direction="column" sx={{ m: 1, backgroundColor: 'white', color: 'black', borderRadius: 2 }}>
-                    <Stack ml={1} direction="row" alignItems="stretch">
-                        <Box sx={{ backgroundColor: 'orange', mt: -3, width: 40, borderRadius: 1 }}>
-                            <AccountTreeIcon fontSize="large" />
-                        </Box>
-                    </Stack>
-                    <Link
-                        component={RouterLink}
-                        to={'/project'}
-                        underline="hover"
-                        sx={{ m: 1, color: 'text.primary' }}
+                        }}
                     >
-                        Project
-                    </Link>
-                </Stack>
+                        <Box
+                            sx={{
+                                backgroundColor: 'orange',
+                                mt: -3,
+                                width: 40,
+                                height: 40,
+                                borderRadius: 1,
+                                display: 'flex',
+                                alignItems: 'center',
+                                justifyContent: 'center',
+                                '&:hover': {
+                                    color: 'orange',
+
+                                },
+                            }}
+                        >
+                            {React.createElement(route.icon)}
+                        </Box>
+                        <Link
+                            component={RouterLink}
+                            to={route.path}
+                            underline="hover"
+                            sx={{
+                                m: 1,
+                                fontSize: 18,
+                                color: 'black',
+                                fontWeight: 'bold',
+                                textAlign: 'center',
+                                '&:hover': {
+                                    color: 'white',
+                                    fontWeight: 'bold',
+                                },
+                            }}
+                        >
+                            {route.name}
+                        </Link>
+                    </Stack>
+                ))}
             </Stack>
         </Stack>
     );
