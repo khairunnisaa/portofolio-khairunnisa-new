@@ -1,13 +1,21 @@
 import React from 'react';
-import {Box, Card, CardContent, Stack, Typography, Link} from "@mui/material";
-import bg from "../../assets/images/bg3.jpg";
-import Divider from "@mui/material/Divider";
+import {
+    Box,
+    Card,
+    Grid,
+    Stack,
+    Typography,
+    Link,
+    Divider
+} from "@mui/material";
 import EmailIcon from '@mui/icons-material/Email';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import WebIcon from '@mui/icons-material/Web';
 import ContactPhoneIcon from '@mui/icons-material/ContactPhone';
 import HomeIcon from '@mui/icons-material/Home';
+
+import bg from "../../assets/images/bg3.jpg";
 
 interface DataFooterProps {
     contact: {
@@ -17,13 +25,37 @@ interface DataFooterProps {
         linkedin: string;
         github: string;
         website: string;
-    }
+    };
 }
 
 interface FooterProps {
     data: DataFooterProps;
 }
-const Footer:React.FC<FooterProps> = ({data}) => {
+
+const Footer: React.FC<FooterProps> = ({ data }) => {
+    const contacts = [
+        {
+            icon: <EmailIcon fontSize="large" />,
+            label: data.contact.email,
+            href: `mailto:${data.contact.email}`,
+        },
+        {
+            icon: <GitHubIcon fontSize="large" />,
+            label: data.contact.github,
+            href: data.contact.github,
+        },
+        {
+            icon: <LinkedInIcon fontSize="large" />,
+            label: data.contact.linkedin,
+            href: data.contact.linkedin,
+        },
+        {
+            icon: <WebIcon fontSize="large" />,
+            label: data.contact.website,
+            href: data.contact.website,
+        },
+    ];
+
     return (
         <Card
             sx={{
@@ -31,10 +63,9 @@ const Footer:React.FC<FooterProps> = ({data}) => {
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 position: 'relative',
-                display: 'flex',
                 overflow: 'hidden',
-                flexDirection: 'column',
-                borderRadius: { xs: 4, md: '0 0 100PX 0' },
+                borderRadius: { xs: 4, md: '0 0 100px 0' },
+                mt: 5,
             }}
         >
             <Box
@@ -45,104 +76,66 @@ const Footer:React.FC<FooterProps> = ({data}) => {
                     width: "100%",
                     height: '100%',
                     zIndex: 1,
-                    objectFit: 'cover',
-                    borderRadius: { xs: 4, md: '0 0 100PX 0' },
+                    borderRadius: { xs: 4, md: '0 0 100px 0' },
                 }}
             />
 
-            <Box p={5} sx={{zIndex: 2}}>
-                <Stack spacing={1}>
-                    <Typography variant="h6" color="white" fontWeight="bold" gutterBottom>
-                        <HomeIcon fontSize={'small'}/> {data.contact.address}
+            <Box p={5} sx={{ zIndex: 2, position: 'relative' }}>
+                <Stack spacing={1} textAlign={{ xs: 'center', md: 'left' }}>
+                    <Typography variant="h6" color="white" fontWeight="bold">
+                        <HomeIcon fontSize="small" /> {data.contact.address}
                     </Typography>
                     <Typography variant="h6" color="white" fontWeight={900}>
-                        <ContactPhoneIcon fontSize={'small'}/> {data.contact.phone}
-                    </Typography>
-
-                    <Divider sx={{ my: 1 }}  color='white'/>
-
-                    <Typography variant="body1" color={'white'}>
-                        <Stack mt={2} direction="row">
-                            <Stack direction={'column'}
-                                   sx={{
-                                       m:1,
-                                       backgroundColor: 'white',
-                                       color: 'black',
-                                       borderRadius: 2
-                            }}>
-                                <Stack ml={1} direction={'row'} alignItems={'stretch'}>
-                                    <Box sx={{backgroundColor:'orange', mt:-3, width: 40, borderRadius:1}}>
-                                        <EmailIcon fontSize={'large'}/>
-                                    </Box>
-                                </Stack>
-
-                                <Link m={1} color={'textPrimary'} href={data.contact.email}  target={'_blank'} underline="hover">
-                                    {data.contact.email}
-                                </Link>
-
-                            </Stack>
-
-                            <Stack direction={'column'}
-                                   sx={{
-                                       m:1,
-                                       backgroundColor: 'white',
-                                       color: 'black',
-                                       borderRadius: 2
-                                   }}>
-                                <Stack ml={1} direction={'row'} alignItems={'stretch'}>
-                                    <Box sx={{backgroundColor:'orange', mt:-3, width: 40, borderRadius:1}}>
-                                        <GitHubIcon fontSize={'large'}/>
-                                    </Box>
-                                </Stack>
-
-
-                                <Link m={1} color={'textPrimary'} href={data.contact.github}  target={'_blank'} underline="hover">
-                                    {data.contact.github}
-                                </Link>
-                            </Stack>
-
-                            <Stack direction={'column'}
-                                   sx={{
-                                       m:1,
-                                       backgroundColor: 'white',
-                                       color: 'black',
-                                       borderRadius: 2
-                                   }}>
-                                <Stack ml={1} direction={'row'} alignItems={'stretch'}>
-                                    <Box sx={{backgroundColor:'orange', mt:-3, width: 40, borderRadius:1}}>
-                                        <LinkedInIcon fontSize={'large'}/>
-                                    </Box>
-                                </Stack>
-
-                                <Link m={1} color={'textPrimary'} href={data.contact.linkedin}  target={'_blank'} underline="hover">
-                                    {data.contact.linkedin}
-                                </Link>
-                            </Stack>
-
-                            <Stack direction={'column'}
-                                   sx={{
-                                       m:1,
-                                       backgroundColor: 'white',
-                                       color: 'black',
-                                       borderRadius: 2
-                                   }}>
-                                <Stack ml={1} direction={'row'} alignItems={'stretch'}>
-                                    <Box sx={{backgroundColor:'orange', mt:-3, width: 40, borderRadius:1}}>
-                                        <WebIcon fontSize={'large'}/>
-                                    </Box>
-                                </Stack>
-                                <Link m={1} color={'textPrimary'} href={data.contact.website}  target={'_blank'} underline="hover">
-                                    {data.contact.website}
-                                </Link>
-                            </Stack>
-                        </Stack>
+                        <ContactPhoneIcon fontSize="small" /> {data.contact.phone}
                     </Typography>
                 </Stack>
+
+                <Divider sx={{ my: 3 }} color="white" />
+
+                <Grid container spacing={2} justifyContent="center">
+                    {contacts.map((item, index) => (
+                        <Grid size={{xs:12, sm:6, md:3}} key={index}>
+                            <Box
+                                sx={{
+                                    backgroundColor: 'white',
+                                    color: 'black',
+                                    borderRadius: 2,
+                                    p: 2,
+                                    textAlign: 'center',
+                                }}
+                            >
+                                <Box
+                                    sx={{
+                                        backgroundColor: 'orange',
+                                        width: 48,
+                                        height: 48,
+                                        mx: 'auto',
+                                        mb: 1,
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                        justifyContent: 'center',
+                                        borderRadius: 1,
+                                    }}
+                                >
+                                    {item.icon}
+                                </Box>
+                                <Link
+                                    href={item.href}
+                                    target="_blank"
+                                    rel="noopener"
+                                    underline="hover"
+                                    color="textPrimary"
+                                    sx={{ wordBreak: 'break-word' }}
+                                >
+                                    {item.label}
+                                </Link>
+                            </Box>
+                        </Grid>
+                    ))}
+                </Grid>
             </Box>
-
         </Card>
+    );
+};
 
-    )
-}
-
-export default Footer
+export default Footer;
